@@ -1,0 +1,16 @@
+#This code is by http://www.pythonforbeginners.com/code-snippets-source-code/python-guessing-game/ and edited by Yuji Yamada
+import random
+n = random.randint(1, 150)
+guess = int(raw_input("Enter an integer from 1 to 150: "))
+while n != "guess":
+    print
+    if guess < n:
+        print "answer is higher than that number."
+        guess = int(raw_input("Enter an integer from 1 to 150: "))
+    elif guess > n:
+        print "answer is lower than that number."
+        guess = int(raw_input("Enter an integer from 1 to 150: "))
+    else:
+        print "Wow! how did you know? you are the winner of this game!"
+        break
+    print
